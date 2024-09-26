@@ -60,7 +60,7 @@ public class AnimalService {
         return animales;
     }
 
-     public List<Animal> getAnimalCount() throws IOException {
+     public List<Animal> getNumberByCategory() throws IOException {
         List<String> listAnimal = Files.readAllLines(Paths.get(filePath));
         List<Animal> animales = new ArrayList<>();
         
