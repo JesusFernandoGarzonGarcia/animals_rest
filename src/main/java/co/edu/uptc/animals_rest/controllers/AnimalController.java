@@ -39,9 +39,9 @@ public class AnimalController {
         return animalService.getAnimalInRange(from, to);
     }
 
-    @GetMapping("/count")
+    @GetMapping("/numberByCategory")
     public List<Animal> getAnimal(@RequestParam int from, @RequestParam int to) throws IOException {
-        logger.info("getAnimal count fall");
+        logger.info("number By Category called");
         return animalService.getAnimalCount();
     }
 
