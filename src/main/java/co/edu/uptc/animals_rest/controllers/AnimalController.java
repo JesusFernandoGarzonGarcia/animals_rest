@@ -39,5 +39,11 @@ public class AnimalController {
         return animalService.getAnimalInRange(from, to);
     }
 
+    @GetMapping("/count")
+    public List<Animal> getAnimal(@RequestParam int from, @RequestParam int to) throws IOException {
+        logger.info("getAnimal count fall");
+        return animalService.getAnimalCount();
+    }
+
 
 }

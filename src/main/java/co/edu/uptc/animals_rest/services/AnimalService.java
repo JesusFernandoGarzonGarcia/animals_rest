@@ -59,5 +59,23 @@ public class AnimalService {
     
         return animales;
     }
+
+     public List<Animal> getAnimalCount() throws IOException {
+        List<String> listAnimal = Files.readAllLines(Paths.get(filePath));
+        List<Animal> animales = new ArrayList<>();
+        
+
+        for (String line : listAnimal) {
+            String[] parts = line.split(",");
+            if (parts.length == 2) {
+                String category = parts[0].trim();
+                String name = parts[1].trim();   
+                String number = parts[2].trim();                
+                animales.add(new Animal(name, category,number));
+            }
+        }
+    
+        return animales;
+    }
 }
 
