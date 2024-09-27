@@ -42,7 +42,7 @@ public class AnimalController {
     @GetMapping("/numberByCategory")
     public List<Animal> getNumberByCategory() throws IOException {
         logger.info("number By Category called");
-        return animalService.getAnimalCount();
+        return animalService.getNumberByCategory();
     }
 
 
