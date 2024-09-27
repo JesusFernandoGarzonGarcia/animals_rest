@@ -12,7 +12,7 @@ import lombok.Setter;
 public class Animal {
     private String name;
     private String category;
-    private String numberByCategory;
+    private int numberByCategory;
 
     // Constructor with only two parameters (name, category)
     public Animal(String name, String category) {

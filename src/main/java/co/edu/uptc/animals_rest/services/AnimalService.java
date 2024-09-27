@@ -65,7 +65,7 @@ public class AnimalService {
             if (parts.length == 3) {
                 String category = parts[0].trim();
                 String name = parts[1].trim();
-                String number = parts[2].trim();
+                int number = parts[2].trim();
                 animales.add(new Animal(name, category, number));  // Using the three-argument constructor
             }
         }
