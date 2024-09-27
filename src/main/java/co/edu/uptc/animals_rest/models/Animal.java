@@ -10,5 +10,10 @@ import lombok.Setter;
 public class Animal {
     private String name;
     private String category;
-    private int numberByCategory;
+    private String numberByCategory;
+
+     public Animal(String name, String category) {
+        this.name = name;
+        this.category = category;
+    }
 }
