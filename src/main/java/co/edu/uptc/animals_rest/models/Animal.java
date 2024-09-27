@@ -18,5 +18,6 @@ public class Animal {
     public Animal(String name, String category) {
         this.name = name;
         this.category = category;
+        
     }
 }
