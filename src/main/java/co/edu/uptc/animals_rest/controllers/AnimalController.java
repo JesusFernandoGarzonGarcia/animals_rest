@@ -35,7 +35,7 @@ public class AnimalController {
 
     @GetMapping("/range")
     public List<Animal> getAnimalRange(@RequestParam int from, @RequestParam int to) throws IOException {
-        logger.info("getAnimal called with parameters: from = {}, to = {}", from, to);
+        logger.info("getAnimalRange called with parameters: from = {}, to = {}", from, to);
         return animalService.getAnimalInRange(from, to);
     }
 
