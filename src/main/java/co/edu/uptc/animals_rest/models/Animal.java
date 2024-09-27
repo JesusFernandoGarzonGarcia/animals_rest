@@ -6,6 +6,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
+@NoArgsConstructor // Default no-args constructor
 @AllArgsConstructor
 public class Animal {
     private String name;
